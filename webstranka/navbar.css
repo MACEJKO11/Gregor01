@@ -1,0 +1,36 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.navbar {
+    background: linear-gradient(to right, #373b44, #74ff96);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 120px; /* Adjust for the fixed navbar */
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}

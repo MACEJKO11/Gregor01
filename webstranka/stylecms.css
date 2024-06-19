@@ -1,0 +1,178 @@
+/* stylecms.css */
+
+/* CSS for the first container */
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.container form {
+    display: grid;
+    gap: 15px;
+}
+
+.container form label {
+    font-weight: 600;
+    color: #333;
+}
+
+.container form input[type="text"],
+.container form input[type="textarea"],
+.container form input[type="number"],
+.container form input[type="file"],
+.container form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.container form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.container form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.container form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.container form button {
+    width: calc(33.33% - 10px);
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.container form button:hover {
+    background-color: #218838;
+}
+
+/* CSS for the edit-container */
+.edit-container {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.edit-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.edit-container th,
+.edit-container td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.edit-container th {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-container img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.edit-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.edit-container form input[type="text"],
+.edit-container form input[type="number"],
+.edit-container form input[type="file"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.edit-container form input[type="submit"],
+.edit-container form button[type="submit"],
+.edit-container form button[type="button"] {
+    flex-basis: calc(50% - 10px);
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-container form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-container form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.edit-container form button[type="submit"] {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit-container form button[type="submit"]:hover {
+    background-color: #e0a800;
+}
+
+.edit-container form button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-container form button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+.edit-container form td:first-child input[type="text"],
+.edit-container form td:first-child input[type="number"],
+.edit-container form td:first-child input[type="file"] {
+    margin-top: 0;
+}
+
+.edit-container form td:nth-child(2) input[type="submit"] {
+    margin-top: 0;
+}
+
+.edit-container form td:nth-child(3) button[type="submit"] {
+    margin-top: 0;
+}
+
+.edit-container form td:nth-child(3) input[type="file"] {
+    margin-top: 0;
+}
